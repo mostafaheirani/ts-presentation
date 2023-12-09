@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { FC } from "react";
+import Button from "./components/button";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+const App: FC = () => (
+  <div className="h-screen flex justify-center items-center">
+    <div className="text-center w-[250px]">
+      <Button
+        tagName="a"
+        href="https://google.com"
+        target="_blank"
+        color="accent"
+        variant="outline"
+        fullWidth
+      >
+        Hello
+      </Button>
     </div>
-  );
-}
+  </div>
+);
 
 export default App;
