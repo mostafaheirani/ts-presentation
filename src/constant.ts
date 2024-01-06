@@ -1,0 +1,3 @@
+export const STORAGE_KEYS = {
+  PERSIST_STORAGE: "PERSIST_STORAGE",
+};

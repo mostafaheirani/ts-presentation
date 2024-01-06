@@ -1,21 +1,21 @@
 import { FC } from "react";
-import Button from "./components/button";
+import Mainlayout from "./components/layout/main";
+import PersistProvider from "./contexts/persist/provider";
+import HomeContent from "./components/pages/home/content";
+import LanguageProvider from "./components/language-provider";
 
 const App: FC = () => (
-  <div className="h-screen flex justify-center items-center">
-    <div className="text-center w-[250px]">
-      <Button
-        tagName="a"
-        href="https://google.com"
-        target="_blank"
-        color="accent"
-        variant="outline"
-        fullWidth
-      >
-        Hello
-      </Button>
-    </div>
-  </div>
+  <PersistProvider>
+    <LanguageProvider>
+      <Mainlayout>
+        <div className="h-screen flex justify-center items-center">
+          <div className="text-center w-[250px]">
+            <HomeContent />
+          </div>
+        </div>
+      </Mainlayout>
+    </LanguageProvider>
+  </PersistProvider>
 );
 
 export default App;

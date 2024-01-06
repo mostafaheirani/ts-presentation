@@ -1,10 +1,6 @@
 import { FC, createElement } from "react";
-import {
-  ButtonProps,
-  BtnColor,
-  BtnVariant,
-  DynamicComponentProps,
-} from "./type";
+import { ButtonProps, BtnColor, BtnVariant } from "./type";
+import { DynamicComponentProps } from "@/global/type";
 import classNames from "classnames";
 
 const colorClass: Record<BtnColor, string> = {

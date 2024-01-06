@@ -1,0 +1,4 @@
+export enum ACTION_TYPES {
+  SET_THEME = "SET_THEME",
+  SET_LOCALE = "SET_LOCALE",
+}
