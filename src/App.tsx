@@ -8,11 +8,7 @@ const App: FC = () => (
   <PersistProvider>
     <LanguageProvider>
       <Mainlayout>
-        <div className="h-screen flex justify-center items-center">
-          <div className="text-center w-[250px]">
-            <HomeContent />
-          </div>
-        </div>
+        <HomeContent />
       </Mainlayout>
     </LanguageProvider>
   </PersistProvider>
